@@ -1,0 +1,1591 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Fragen und Antworten zum Kräuterkurs">
+        <meta name="author" content="aherbertz@gmail.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            body {
+            }
+            .row div {
+                font-size: 20pt;
+                line-height: 28pt;
+                width: 50%;
+                margin: auto;
+                min-height: 300px;
+                padding: 40px;
+                border: 4px outset;
+                cursor: pointer;
+                background-color: white;
+            }
+          @media (max-width: 600px) {
+            .row div {
+                font-size: 14pt;
+                line-height: 20pt;
+                width: 70%;
+                padding: 20px;
+                min-height: unset;
+
+            }     
+          }
+            
+            div.answer {
+                margin-bottom: 20pt;
+            }
+
+            .hide {
+                display: none!important;
+            }
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: lightgreen;
+                padding: 5pt;
+                /* position: fixed; */
+            }
+            body {
+                background-color: lightgreen;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <h2>Fragen zum Kräuterkurs</h2>
+            <div class="done">Fertig!</div>
+            <div class="show-all">
+                <button onclick="showAll()">Alle anzeigen</button>
+            </div>
+            <div class="reload hide">
+                <button onclick="location.reload()">Nochmal</button>
+            </div>
+        </div>
+
+        <div class="row row-0">
+            <div class="question">Frage:<br>
+                Mit welchen Pflanzen könnte ein niedriger Blutrruck behandelt werden?</div>
+            <div class="answer">
+                <p>siehe 5.6</p>
+                <p>Antwort:<br>
+                    * Weißdorn<br>
+                    * Rosmarin</p>
+            </div>
+        </div>
+        <div class="row row-1">
+            <div class="question">Frage:<br>
+                Welche Pflanzen werden beim prämenstruellen Syndrom eingesetzt?</div>
+            <div class="answer">
+                <p>siehe 5.10</p>
+                <p>Antwort: (als Tee)<br>
+                    *Schafgarbe<br>
+                    *Frauenmantel<br>
+                    *Johanniskraut<br>
+                    *Beifuß<br>
+                    *Mönchspfeffer<br>
+                    *Rotklee</p>
+            </div>
+        </div>
+        <div class="row row-2">
+            <div class="question">Frage:<br>
+                Welche Pflanzen können bei Hitzewallungen in den Wechseljahren eingesetzt werden?</div>
+            <div class="answer">
+                <p>siehe 5.10</p>
+                <p>Antwort:<br>
+                    *<strong>
+                        <span class="underline">Salbei</span></strong>
+                    (Tee / Waschungen)<br>
+                    *Frauenmantel<br>
+                    *Johanniskraut<br>
+                    *Schafgarbe<br>
+                    *Rotklee<br>
+                    * traubensilberkerze (→ Apotheke)</p>
+            </div>
+        </div>
+        <div class="row row-3">
+            <div class="question">Frage:<br>
+                Welche Nebenwirkungen können bei Dauerdosierung von z.B. Leinsamen auftreten?</div>
+            <div class="answer">
+                <p>siehe 5.1</p>
+                <p>Antwort:<br>
+                    Durch die dauerhafte Anwendung ( Schleimhüllenbildung)kann die Aufnahmefähigkeit (Resorptionsfähigkeit) der Dünndarmschleimhaut eingeschränkt sein.</p>
+            </div>
+        </div>
+        <div class="row row-4">
+            <div class="question">Frage:<br>
+                Welche pflanzlichen Heilmittel können bei Hämorrhoiden eingesetzt werden?</div>
+            <div class="answer">
+                <p>siehe 5.1</p>
+                <p>Antwort:<br>
+                    * Kamille (Sitzbäder)<br>
+                    *Schafgarbe<br>
+                    *Steinklee<br>
+                    * Buchweizentee<br>
+                    *Johanniskrautzäpfchen</p>
+            </div>
+        </div>
+        <div class="row row-5">
+            <div class="question">Frage:<br>
+                Wie stellt man einen Leinsamentee her?</div>
+            <div class="answer">
+                <p>siehe 5.1</p>
+                <p>Antwort:<br>
+                    *2 TL Leinsamen auf 250ml
+                    <strong>
+                        <span class="underline">kaltes</span></strong>
+                    Wasser, 30 min ziehen lassen,<br>
+                    *Zum trinken ev. leicht erwärmen (max. 37 °C)</p>
+            </div>
+        </div>
+        <div class="row row-6">
+            <div class="question">Frage:<br>
+                Welche Pflanzen unterstützen den lymphatischen und venösen Rückfluss bei Krampfadern?</div>
+            <div class="answer">
+                <p>siehe 5.6</p>
+                <p>Antwort:<br>
+                    *Rosskastanie<br>
+                    *Steinklee<br>
+                    *Ginkgo<br>
+                    *Buchweizen</p>
+            </div>
+        </div>
+        <div class="row row-7">
+            <div class="question">Frage:<br>
+                Nenne mind. eine Senfölpflanze.</div>
+            <div class="answer">
+                <p>siehe 4.2.5, 5.4, 5.9</p>
+                <p>Antwort:<br>
+                    *Meerrettich<br>
+                    *Senf<br>
+                    *Kapuzinerkresse</p>
+            </div>
+        </div>
+        <div class="row row-8">
+            <div class="question">Frage:<br>
+                Wie lange sollte eine Teekur in der Regel höchstens dauern?</div>
+            <div class="answer">
+                <p>siehe 4.2.1</p>
+                <p>Antwort:<br>
+                    4-6 Wochen, 3 Tassen täglich.<br>
+                    Bei Johanniskraut, Weißdorn und Buchweizen auch länger.<br>
+                    <span class="underline">Achtung</span>: Bei Huflattich nur 2mal / Jahr für je 3 Wochen</p>
+            </div>
+        </div>
+        <div class="row row-9">
+            <div class="question">Frage:<br>
+                Bei welchen Beschwerden würdest Du Amara (bitterstoffhaltige Pflanzen) verordnen?</div>
+            <div class="answer">
+                <p>siehe 3.3, 5.2</p>
+                <p>Antwort:<br>
+                    *Blähungen<br>
+                    *Völlegefühl<br>
+                    *Verdauungsbeschwerden<br>
+                    *Magenbeschwerden<br>
+                    *Appetitlosigkeit<br>
+                    *Schwächezustände<br>
+                    *Leber-Galle-Beschwerden<br>
+                    *Schwaches Immunsystem</p>
+            </div>
+        </div>
+        <div class="row row-10">
+            <div class="question">Frage:<br>
+                Aus welchen drei Komponenten könnte ein Rheumatee hergestellt werden?</div>
+            <div class="answer">
+                <p>siehe 5.8</p>
+                <p>Antwort:<br>
+                    *Nierenpflanze (Birke, Brennnessel)<br>
+                    *Leberpflanze (Löwenzahn, Mariendistel)<br>
+                    * Karminativa (Anis, Fenchel, Kümmel)</p>
+            </div>
+        </div>
+        <div class="row row-11">
+            <div class="question">Frage:<br>
+                Wie wirken Kumarin-Glykoside Pflanzen?</div>
+            <div class="answer">
+                <p>siehe 3.5</p>
+                <p>Antwort:<br>
+                    *Blutgerinnungshemmend (blutverdünnend)<br>
+                    *Ödem- und entzündungshemmend<br>
+                    *fördern lymphatischen und venösen Rückfluss<br>
+                    * z.B. Waldmeister, Echtes Labkraut, Echter und Weißer Steinklee, Kamille, Liebstöckel, Pastinak und Engelwurz</p>
+            </div>
+        </div>
+        <div class="row row-12">
+            <div class="question">Frage:<br>
+                Welche Heilpflanzen könnten bei starker schmerzhafter Menstruation eingesetzt werden?</div>
+            <div class="answer">
+                <p>siehe 5.10</p>
+                <p>Antwort:<br>
+                    *Schafgarbe: ganzes Kraut, wenn es blüht(Tee, Wickel oder Säckchen (trocken, angewärmt auflegen)<br>
+                    *Tee:
+                    <span class="underline">Schafgarbe</span>,
+                    <span class="underline">Frauenmantel</span>, Kamille, Johanniskraut oder
+                    <span class="underline">Gänsefingerkraut</span>
+                    – 2 Tage vor Menstruation beginnen<br>
+                    * Hirtentäschel: ganzes Kraut als Tee,<br>
+                    * Johanniskrautöl: Waden einreiben</p>
+            </div>
+        </div>
+        <div class="row row-13">
+            <div class="question">Frage:<br>
+                Mit welchen Pflanzen könnte ein niedriger Blutrruck behandelt werden?</div>
+            <div class="answer">
+                <p>siehe 5.6</p>
+                <p>Antwort:<br>
+                    * Weißdorn<br>
+                    *Rosmarin</p>
+            </div>
+        </div>
+        <div class="row row-14">
+            <div class="question">Frage:<br>
+                Mit welchen Pflanzen könnte Bluthochdruck behandelt werden?</div>
+            <div class="answer">
+                <p>Siehe 5.6</p>
+                <p>Antwort:<br>
+                    *Weißdorn<br>
+                    *Mistel<br>
+                    *Knoblauch</p>
+            </div>
+        </div>
+        <div class="row row-15">
+            <div class="question">Frage:<br>
+                Wie unterscheidet sich Buchweizen in der Wirkung von Steinklee?</div>
+            <div class="answer">
+                <p>Siehe 5.1, 5.5, 5.6</p>
+                <p>Antwort:<br>
+                    Buchweizen beeinflusst die Mikro- und Makrozirkulation der Lymphe und reduziert Gewebsödeme (<strong>Buchweizen wirkt
+                        <span class="underline">nicht</span>
+                        blutverdünnend.</strong>
+                    (für Marcumar-Patienten!)<br>
+                    Steinklee wirkt entzündungshemmend, fördert venösen Rückfluss, verbessert die Lympfkinetik.<br>
+                    (Steinklee wirkt blutverdünnend.)</p>
+            </div>
+        </div>
+        <div class="row row-16">
+            <div class="question">Frage:<br>
+                Wie wirken Herzglykoside – Pflanzen?</div>
+            <div class="answer">
+                <p>Siehe 5.6</p>
+                <p>Antwort:<br>
+                    *Erhöhung der Kontraktionskraft des Muskels<br>
+                    *Verminderung der Herzfrequenz und der Erregungsleitungsgeschwindigkeit vom Vorhof zur Kammer<br>
+                    * sie setzen die (Herz)Reizschwelle herab<br>
+                    * Bsp. Roter Fingerhut</p>
+            </div>
+        </div>
+        <div class="row row-17">
+            <div class="question">Frage:<br>
+                Wie wirken Senfölglykosid-Pflanzen?</div>
+            <div class="answer">
+                <p>Siehe 3.5</p>
+                <p>Antwort:<br>
+                    *hautreizend<br>
+                    *erwärmend<br>
+                    *verdauungsfördernd<br>
+                    *antibakteriell</p>
+            </div>
+        </div>
+        <div class="row row-18">
+            <div class="question">Frage:<br>
+                Nenne milchbildende Heilpflanzen.</div>
+            <div class="answer">
+                <p>Siehe 5.10</p>
+                <p>Antwort:<br>
+                    *Fenchel, Kümmel, Anis, Brennnessel<br>
+                    *Tee s.o. 7 min ziehen lassen, 3X tgl. 1 Tasse<br>
+                    *mgl. auch Anis, Fenchel, Majoran, Dill, Melisse, Schwarzkümmel zu gleichen Teilen</p>
+            </div>
+        </div>
+        <div class="row row-19">
+            <div class="question">Frage:<br>
+                Wie wird eine Tinktur zubereitet?</div>
+            <div class="answer">
+                <p>Siehe 4.2.3</p>
+                <p>Antwort:<br>
+                    Frische oder getrocknete Kräuter mit Alkohol übergießen und an einen warmen Ort stellen. Täglich schütteln. Nach 4-6 Wochen abfiltern und kühl lagern.</p>
+            </div>
+        </div>
+        <div class="row row-20">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Wie wird ein Mazerat zubereitet?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 4.2.1</p>
+                <p>Antwort:<br>
+                    Kaltwasserauszug - für Pflanzen, deren Wirkstoffe durch Überbrühen zerstört werden z.B. Malve oder wo das Ausziehen bestimmter Inhaltsstoffe verhindert werden soll (Bärentraube)</p>
+                <p>1 TL Droge auf 1 Tasse kaltes Wasser geben, ca 20 min ziehen lassen</p>
+            </div>
+        </div>
+        <div class="row row-21">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Welche Heilpflanze hat sich besonders bei Heiserkeit bewährt?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 5.4</p>
+                <p>Antwort:<br>
+                    Odermennig („Sängerkraut“)</p>
+                <p>Salbei</p>
+                <p>Thymian</p>
+                <p>Malve</p>
+                <p>Als Tee</p>
+            </div>
+        </div>
+        <div class="row row-22">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Welche Nebenwirkungen können bei Überdosierung von Senfölen auftreten?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 3.5</p>
+                <p>Antwort:</p>
+                <p>Äußerlich:</p>
+                <ul>
+                    <li>
+                        <p>Hautreizend (Brennen , Stechen, Hitze)</p>
+                    </li>
+                    <li>
+                        <p>Hautverbrennungen</p>
+                    </li>
+                </ul>
+                <p>Innerlich:</p>
+                <ul>
+                    <li>
+                        <p>Nierenreizend</p>
+                    </li>
+                    <li>
+                        <p>Magenschleimhautreizend</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row row-23">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Wie könnte ein Kind bei mit Durchfall therapiert werden?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 5.1</p>
+                <p>Antwort:</p>
+                <ul>
+                    <li>
+                        <p>Geriebener Apfel</p>
+                    </li>
+                    <li>
+                        <p>Getrocknete Heidelbeeren</p>
+                    </li>
+                    <li>
+                        <p>Leinsamen</p>
+                    </li>
+                    <li>
+                        <p>Möhrensuppe</p>
+                    </li>
+                    <li>
+                        <p>Leinsamen</p>
+                    </li>
+                    <li>
+                        <p>Flogsamen</p>
+                    </li>
+                    <li>
+                        <p>Viel trinken</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row row-24">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Bei welchen Beschwerdebildern könnte man Weidenrinde (Tinktur) verordnen</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 5+6</p>
+                <p>Antwort:</p>
+                <ul>
+                    <li>
+                        <p>Fieber</p>
+                    </li>
+                    <li>
+                        <p>Gelenkschmerzen</p>
+                    </li>
+                    <li>
+                        <p>Kopfschmerzen</p>
+                    </li>
+                    <li>
+                        <p>Rheuma</p>
+                    </li>
+                    <li>
+                        <p>Zahnfleischschmerzen</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row row-25">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Welche Tee- Kombinationen gibt es? Gemeint ist die Zubereitungsart.</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 4.2.1</p>
+                <p>Antwort:</p>
+                <p>
+                    <strong>Infusmazerat:
+                    </strong>
+                </p>
+                <p>Drogen mit heißem Wasser übergießen und erkalten lassen (ätherische Öle herausziehen)</p>
+                <p>
+                    <strong>Mazerationsdekokt:</strong>
+                </p>
+                <p>
+                    <strong>Pflanze über Nacht ins kalte Wasser legen, nach 12 Stunden aufkochen (für Pflanzen, die ihre Inhaltsstoffe nur langsam abgeben z.B. Kieselsäure des Ackerschachtelhalms)</strong>
+                </p>
+            </div>
+        </div>
+        <div class="row row-26">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Wie wird der Beifuß von der Kommission E bewertet?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 4.2.1</p>
+                <p>Antwort:</p>
+                <p>Negativ, wegen allergischem Potential</p>
+            </div>
+        </div>
+        <div class="row row-27">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Was ist der Unterschied zwischen einem fetten Öl, Ölgemisch und einem Auszugsöl</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 3.4, 4.2.2</p>
+                <p>Antwort:</p>
+                <p>
+                    <strong>Fettes Öl:</strong>
+                </p>
+                <p>Aus Samen (kalt gepresst z.B. Leinsamen, Oliven, Raps, Walnuss)</p>
+                <p>
+                    <strong>Ölgemisch</strong>:</p>
+                <p>Fettes Öl mit ätherischem Öl gemischt z.B. Lavendelöl mit Mandelöl, bei einem Massageöl ist das fette Öl das divägeröl,</p>
+                <p>0,5-2%ige Lösung = 12 tropfen Öl in 30 ml divägeröl</p>
+                <p>
+                    <strong>Auszugsöl</strong>:</p>
+                <p>Mischung aus Öl und einer Pflanze (Pflanzenteile)</p>
+            </div>
+        </div>
+        <div class="row row-28">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Was sind Glykoside?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 3.5</p>
+                <p>Antwort:</p>
+                <p>Glykoside sind Verbindungen aus einen Zuckeranteil und einem Nichtzuckeranteil.</p>
+            </div>
+        </div>
+        <div class="row row-29">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Wie wird ein Infus zubereitet?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 4.2.1</p>
+                <p>Antwort:</p>
+                <p>1 TL Droge (Blüten, Blätter, Kraut) mit einer Tasse (150 ml) übergießen, 5-7 Minuten mit aufgelegtem Deckel ziehen lassen</p>
+            </div>
+        </div>
+        <div class="row row-30">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Welche Nebenwirkungen können Kumarinpflanzen auslösen?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 4.2.1</p>
+                <p>Antwort:</p>
+                <ul>
+                    <li>
+                        <p>Bei Überdosierung Kopfschmerzen und Erbrechen bis zum Herzstillstand</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>Wirken blutverdünnend</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row row-31">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Wie wird ein Quarkwickel zubereitet? Worauf ist zu achten?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 4.2.1</p>
+                <p>Antwort:</p>
+                <p>Speisequark (zimmerwarm) etwas ½ cm dick auf ein Baumwolltuch streichen, zusammenfalten. Sodass zwischen Quark und Haut eine Tuchschicht vorhanden ist. So bleibt der Quark länger feucht. Auf die schmerzenden Gelenke auflegen , bei Bedarf mit einer Mullbinde befestigen. So lange aufgelegt lassen, wie es angenehm ist. Auf heiße Gelenke niemals Heiße Wickel auflegen.</p>
+            </div>
+        </div>
+
+        <div class="row row-32">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Was sind Anthranoid-Drogen? Wie wirken Sie?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 5.1.3</p>
+                <ul>
+                    <li>
+                        <p>Antwort:</p>
+                    </li>
+                </ul>
+                <blockquote>
+                    <p>= Anthrachinon Glykoside, die im Dickdarm motilitätssteigernd wirken.</p>
+                </blockquote>
+                <ul>
+                    <li>
+                        <p>Verhindern Rückresorption von Elektrolyten und Wasser, sodass es zur Flüssigkeitsanreicherung im Darm kommt</p>
+                    </li>
+                    <li>
+                        <p>Mangel an Elektrolyten und Wasser im Blut, kann es zur</p>
+                    </li>
+                </ul>
+                <blockquote>
+                    <p>Elektrolytentgleisung kommen</p>
+                </blockquote>
+                <ul>
+                    <li>
+                        <p>Wirken gegen Verstopfung (Obstipation), also als Abführmittel</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row row-33">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Wie wird die Weidenrindentunktur dosiert?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 4.2.1</p>
+                <p>Antwort:</p>
+                <p>
+                    <strong>Innerlich:</strong>
+                </p>
+                <ul>
+                    <li>
+                        <p>3x10 tropfen täglich</p>
+                    </li>
+                    <li>
+                        <p>1x30 tropen täglich</p>
+                    </li>
+                </ul>
+                <p>
+                    <strong>Äußerlich:</strong>
+                </p>
+                <ul>
+                    <li>
+                        <p>Pur auftragen oder Umschläge</p>
+                    </li>
+                </ul>
+                <blockquote>
+                    <p>Nicht auf offene Wunden</p>
+                    <p>5 Jahre haltbar</p>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="row row-34">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Wie wird Tee bei Kindern dosiert?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 4.2.1</p>
+                <p>Antwort:</p>
+                <p>0-3 1/8 TL Droge</p>
+                <p>4-7 ¼ TL Droge</p>
+                <p>8-14 ½ TL Droge</p>
+            </div>
+        </div>
+        <div class="row row-35">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Welche anderen Pflanzen enthalten den gleichen Wirkstoff wie die Weidenrinde? (Salizylsäure) Welche Wirkung hat sie?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 4.2.1</p>
+                <p>Antwort:</p>
+                <ul>
+                    <li>
+                        <p>Mädesüß</p>
+                    </li>
+                    <li>
+                        <p>Holunder</p>
+                    </li>
+                    <li>
+                        <p>Lindenblüten</p>
+                    </li>
+                </ul>
+                <p>
+                    <strong>Wirkung:</strong>
+                </p>
+                <ul>
+                    <li>
+                        <p>blutverdünnend</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row row-36">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Wie wirken Karminativa?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 5.1</p>
+                <p>Antwort:</p>
+                <ul>
+                    <li>
+                        <p>Entblähend</p>
+                    </li>
+                    <li>
+                        <p>Motilitätssteigernd (aktive Bewegung des Darms, Bewegungsfähigkeit)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row row-37">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Nenne typische Karminativa</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 5.1</p>
+                <p>Antwort:</p>
+                <ul>
+                    <li>
+                        <p>Kümmel</p>
+                    </li>
+                    <li>
+                        <p>Anis</p>
+                    </li>
+                    <li>
+                        <p>Fenchel</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row row-38">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Welche Bewertung hat der Huflattich von der Kommission E bekommen?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 2</p>
+                <p>Antwort:</p>
+                <ul>
+                    <li>
+                        <blockquote>
+                            <p>Positiv, Hustenbeschwerden</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>aber nur 2 mal jährliche Anwendung max 3 Wochen als Teekur</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>(wg Pyrrolizidinalalkaloiden)</p>
+                        </blockquote>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row row-39">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Zähle mindestens fünf Pflanzen auf, die einen hohen Gehalt an ätherischen Ölen haben.</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 3.4, 4.2.2</p>
+                <p>Antwort:</p>
+                <ul>
+                    <li>
+                        <blockquote>
+                            <p>Melisse</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>Beifuß</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>Kümmel</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>Minze</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>Kamille</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>Lavendel</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>Salbei</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>Thymian</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>Schafgarbe</p>
+                        </blockquote>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row row-40">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Wie wird ein Dekokt zubereitet?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 4.2.1</p>
+                <p>Antwort:</p>
+                <p>Abkochung, Kaltansatz</p>
+                <p>1 TL Droge (meist Wurzel, Rinde oder Früchte) mit einer Tasse kaltem Wasser ansetzen, aufkochen und 10 Minuten ziehen lassen.</p>
+            </div>
+        </div>
+        <div class="row row-41">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Wie würdest du einen Sonnenbrand behandeln?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 5.11.3</p>
+                <p>Antwort:</p>
+                <ul>
+                    <li>
+                        <blockquote>
+                            <p>Johanneskrautöl (nicht in die Sonne danach)</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>Quarkwickel</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>Gurkenscheiben</p>
+                        </blockquote>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row row-42">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Welche Wirkung hat Propolis?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 3.4, 4.2.2, 5.1, 5.5</p>
+                <p>Antwort:</p>
+                <ul>
+                    <li>
+                        <blockquote>
+                            <p>wundheilend</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>Immunstimulierend</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>antimikrobiell</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>zusammenziehend</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>entzündungshemmend</p>
+                        </blockquote>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row row-43">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Wie könnte eine pflanzliche Therapie bei Krampfadern aussehen?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 5.6</p>
+                <p>Antwort:</p>
+                <ul>
+                    <li>
+                        <p>Salbe, Öl, Tinktur Rosskastanie auftragen (mehrmals täglich)</p>
+                    </li>
+                    <li>
+                        <p>Buchweizen Tee aus Apotheke</p>
+                    </li>
+                </ul>
+                <blockquote>
+                    <p>Infus, 7 Min ziehen lassen, 3x tägl, 1 Tasse (längere, beziehungsweise wiederkehrende Behandlung möglich, stärkt die Gefäßwände</p>
+                </blockquote>
+                <ul>
+                    <li>
+                        <p>Steinklee Kraut Tee (2-3 mal täglich, 4-6 Wochen)</p>
+                    </li>
+                    <li>
+                        <p>Steinklee Tinktur (innerlich u. äußerlich)</p>
+                    </li>
+                    <li>
+                        <p>Gingko. Tinktur</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row row-44">
+            <div class="question">
+                <p>Frage:</p>
+                <p>Wie könnte eine Nasennebenhöhlenentzündung behandelt werden?</p>
+            </div>
+            <div class="answer">
+                <p>Siehe 5.4</p>
+                <p>Antwort:</p>
+                <p>Mit Meerrettich. Frischen Meerrettich zerdrücken/ reiben, auf ein dünnes Tuch geben und auf den 7. Halswirbel auflegen (nicht länger als 5 Minuten, der er hautreizend wirken kann. Evtl danach mit Rotöl einreiben.</p>
+            </div>
+        </div>
+
+        <div class="row row-48">
+            <div class="question">Frage:<br>
+                Wann sollen Bitterstoffe/ Bitterstofftees
+                <span class="underline">nicht</span>
+                verordnet werden?(Bei welchen Krankheiten?)</div>
+            <div class="answer">
+                <p>siehe 3.3</p>
+                <p>Antwort:<br>
+                    Magenbeschwerden<br>
+                    Bluthochdruck<br>
+                    Sodbrennen<br>
+                    Magen- u. Zwölffingerdarmgeschwüren*<br>
+                    Morbus Crohn<br>
+                    Magenschleimhautentzündung<br>
+                    Schilddrüsenüberfunktion (Überaktivität d. Schilddrüse)</p>
+            </div>
+        </div>
+        <div class="row row-49">
+            <div class="question">Frage:<br>
+                Welcher kühlender Wickel hat sich bei stillenden Müttern bei drohender Brustentzündung bewährt?</div>
+            <div class="answer">
+                <p>siehe 5.10</p>
+                <p>Antwort:<br>
+                    Quarkwickel (siehe 5.10, S. 10)<br>
+                    Honig auftragen<br>
+                    Steinklee/ Weißkohlauflagen<br>
+                    Holundersalbe schützt (Ölansatz, Blüten mit möglichst wenig Grün)</p>
+            </div>
+        </div>
+        <div class="row row-50">
+            <div class="question">Frage:<br>
+                Zähle drei Pflanzen auf, die einen hohen Gehalt an Saponinen haben.</div>
+            <div class="answer">
+                <p>siehe 3.7, 5.4</p>
+                <p>Antwort:<br>
+                    Seifenkraut<br>
+                    Königskerze<br>
+                    Schlüsselblume (geschützt)<br>
+                    Stiefmütterchen<br>
+                    Efeu (bedingt giftig)</p>
+            </div>
+        </div>
+        <div class="row row-51">
+            <div class="question">Frage:<br>
+                Welche begleitende Therapie würdest du Patienten mit Arthrose empfehlen?</div>
+            <div class="answer">
+                <p>siehe 5.8</p>
+                <p>Antwort:<br>
+                    Ernährungsumstellung (auf basische Kost)<br>
+                    viel Bewegung<br>
+                    viel trinken<br>
+                    Wärmebehandlung<br>
+                    Heublumensäckchen<br>
+                    Blutreinigungskur (Frühjahr + Herbst)<br>
+                    Rheumabad (Rezept siehe 5.8.1.1)</p>
+            </div>
+        </div>
+        <div class="row row-52">
+            <div class="question">Frage:<br>
+                Wie sieht eine erste Hilfe bei Prellungen/ Verstauchungen aus?</div>
+            <div class="answer">
+                <p>siehe 5.11.2</p>
+                <p>Antwort:<br>
+                    Kühlen<br>
+                    Quarkwickel<br>
+                    Erbsensäckchen (Gefrierfach)<br>
+                    große Blätter quetschen u. auflegen<br>
+                    (Ampfer, Beinwell)<br>
+                    Kastanientinktur, Weidenrindentinktur<br>
+                    Johanniskrautöl, Steinklee</p>
+            </div>
+        </div>
+        <div class="row row-53">
+            <div class="question">Frage:<br>
+                Zu welchen Nebenwirkungen können ätherische Ölplfanzen bei Langzeitanwendung führen?</div>
+            <div class="answer">
+                <p>siehe 3.4, 4.2.2</p>
+                <p>Antwort:<br>
+                    Sie wirken giftig auf Leber, Nieren und das zentrale Nervensystem (ZNS)</p>
+                <p>Es kann zu einem Gewöhnungseffekt und allergischen Reaktionen kommen.</p>
+            </div>
+        </div>
+        <div class="row row-54">
+            <div class="question">Frage:<br>
+                Nenne mind. eine Kumarinpflanze.</div>
+            <div class="answer">
+                <p>siehe 3.5</p>
+                <p>Antwort:<br>
+                    Waldmeister<br>
+                    Steinklee<br>
+                    Honigklee<br>
+                    Rauchgras</p>
+            </div>
+        </div>
+        <div class="row row-55">
+            <div class="question">Frage:<br>
+                Wie wirken Bitterstoffe/ Bitterstoffpflanzen?</div>
+            <div class="answer">
+                <p>siehe 3.3</p>
+                <p>Antwort:<br>
+                    verdauungsfördernd (nach einer Mahlzeit)<br>
+                    appetitanregend (vor einer Mahlzeit)<br>
+                    tonisieren/ stärkend<br>
+                    stoffwechselanregend<br>
+                    gährungs-, blähungs- und fäulniswidrig</p>
+            </div>
+        </div>
+        <div class="row row-56">
+            <div class="question">Frage:<br>
+                Wie würdest du eine Magenschleimhautentzündung behandeln?</div>
+            <div class="answer">
+                <p>siehe 5.2</p>
+                <p>Antwort:<br>
+                    Arzt Diagnose- Dann z.B. mit einer Wechselkur (Teekur):.<br>
+                    <span class="underline">1.Woche</span>- Schleimpflanzen, schützend (Leinsamen, Malve, Hafer)<br>
+                    <span class="underline">2.Woche-</span>
+                    Entzündungshemmende Pflanzen (Kamille, Johanniskraut) 3.<span class="underline">Woche</span>- Gerbstoffpflanzen, stärkend (Odermennig, Salbei Brombeere) 1-3x täglich 1 Tasse Tee</p>
+            </div>
+        </div>
+        <div class="row row-57">
+            <div class="question">Frage:<br>
+                Nenne ein Herzglykoside Pflanze.</div>
+            <div class="answer">
+                <p>siehe 5.6</p>
+                <p>Antwort:<br>
+                    Roter Fingerhut<br>
+                    <span class="underline">Achtung: Verschreibungspflichtig</span></p>
+            </div>
+        </div>
+        <div class="row row-58">
+            <div class="question">Frage:<br>
+                Wie wirken Pflanzen mit ätherischen Ölen?</div>
+            <div class="answer">
+                <p>siehe 3.4, 4.2.2</p>
+                <p>Antwort:<br>
+                    desinfizierend<br>
+                    entzündungshemmend<br>
+                    krampflösend<br>
+                    stärkend (tonisierend) Bakterien- und Viren widrig, Pilz hemmend</p>
+            </div>
+        </div>
+        <div class="row row-59">
+            <div class="question">Frage:<br>
+                Wann sind heiße Wickel und Auflagen kontraindiziert?</div>
+            <div class="answer">Antwort:<br>
+                Bei akuten Entzündungen<br>
+                Bei Fieber</div>
+        </div>
+        <div class="row row-60">
+            <div class="question">Frage:<br>
+                Wie wirken Saponindrogen?</div>
+            <div class="answer">
+                <p>siehe 3.7, 5.4</p>
+                <p>Antwort:<br>
+                    schleimlösend, ausschwemmend,entkrampfend umstimmend (=beruhigend bei Erkältungskrankheiten, nicht reizend) hautreinigend, blutreinigend</p>
+            </div>
+        </div>
+        <div class="row row-61">
+            <div class="question">Frage:<br>
+                Kennst du Pflanzen, die das Immunsystem stärken? Nenne diese.</div>
+            <div class="answer">Antwort:<br>
+                Bitterstoffpflanzen: Löwenzahn Wermut (stärkend/ tonisierend) Frischer Spitzwegerich<br>
+                Hagebutte (frisch oder mit Honig) Holunderbeerensaft Holunderblütentee</div>
+        </div>
+        <div class="row row-62">
+            <div class="question">Frage:<br>
+                Zähle 5 Gerbstoffpflanzen auf.</div>
+            <div class="answer">
+                <p>siehe 3.1</p>
+                <p>Antwort:<br>
+                    Eiche, Salbei, Schafgarbe, Gundermann Odermennig, Frauenmantel, Holunder, Mädesüß, Walnuss, Preisenbeere, Heidelbeere</p>
+            </div>
+        </div>
+        <div class="row row-63">
+            <div class="question">Frage:<br>
+                Wie werden Bitterstoffe dosiert?</div>
+            <div class="answer">
+                <p>siehe 3.3</p>
+                <p>Antwort:<br>
+                    1/2 TL auf 150 ml oder 1/2-1 TL auf 250 ml Wasser</p>
+                <p>Weniger ist mehr! Nicht süßen!</p>
+                <p>Das hebt die Wirkung auf!</p>
+            </div>
+        </div>
+        <div class="row row-64">
+            <div class="question">Frage:<br>
+                Welche Pflanzen sind bei einer Magenschleimhautentzündung kontraindiziert?</div>
+            <div class="answer">
+                <p>Siehe 5.2</p>
+                <p>Antwort:<br>
+                    Alle Bitterstoffpflanzen</p>
+                <p>Löwenzahn, Schafgarbe, Beifuß Bitterstoffe regen an und wirken reizend</p>
+            </div>
+        </div>
+        <div class="row row-65">
+            <div class="question">Frage:<br>
+                Wie werden frische blutstillende Pflanzen angewendet, wenn du eine blutende Wunde behandeln willst?</div>
+            <div class="answer">
+                <p>Siehe 5.11.5</p>
+                <p>Antwort:<br>
+                    Wegerichblätter (Spitz/ Breitwegerich), Schafgarbeblätter quetschen, wringen oder kauen, damit der Saft austritt, in Mulltuch oder Taschentuch auflegen</p>
+                <p>Tee aus Schafgarbe oder Hirtentäschel abkühlen lassen, Mullauflage machen</p>
+            </div>
+        </div>
+        <div class="row row-66">
+            <div class="question">Frage:<br>
+                Eine Patientin klagt über trockene Augen. Würdest du Augentrost verordnen?</div>
+            <div class="answer">
+                <p>Antwort:<br>
+                    Nein, nicht bei trockenen Augen!</p>
+                <p>Augentrost wirkt austrocknend durch die Gerbstoffe, daher z.B. lieber Leinsamenauflagen machen</p>
+            </div>
+        </div>
+        <div class="row row-67">
+            <div class="question">Frage:<br>
+                Wie wirken Schleimstoffe?</div>
+            <div class="answer">
+                <p>Siehe 3.2</p>
+                <p>Antwort:<br>
+                    schützend, reizmildernd, entzündungs- hemmend, Giftstoffe bindend, abführend</p>
+            </div>
+        </div>
+        <div class="row row-68">
+            <div class="question">Frage:<br>
+                Welche Nebenwirkungen haben Gerbstoffpflanzen?</div>
+            <div class="answer">
+                <p>siehe 3.1</p>
+                <p>Antwort:<br>
+                    schleimhautreizend, austrocknend</p>
+            </div>
+        </div>
+
+        <div class="row row-69">
+            <div class="question">Frage:<br>
+                Wann sollen Bitterstoffe/ Bitterstofftees
+                <span class="underline">nicht</span>
+                verordnet werden?(Bei welchen Krankheiten?)</div>
+            <div class="answer">
+                <p>siehe 3.3</p>
+                <p>Antwort:<br>
+                    Magenbeschwerden<br>
+                    Bluthochdruck<br>
+                    Sodbrennen<br>
+                    Magen- u. Zwölffingerdarmgeschwüren*<br>
+                    Morbus Crohn<br>
+                    Magenschleimhautentzündung<br>
+                    Schilddrüsenüberfunktion (Überaktivität d. Schilddrüse)</p>
+            </div>
+        </div>
+        <div class="row row-70">
+            <div class="question">Frage:<br>
+                Welcher kühlender Wickel hat sich bei stillenden Müttern bei drohender Brustentzündung bewährt?</div>
+            <div class="answer">
+                <p>siehe 5.10</p>
+                <p>Antwort:<br>
+                    Quarkwickel (siehe 5.10, S. 10)<br>
+                    Honig auftragen<br>
+                    Steinklee/ Weißkohlauflagen<br>
+                    Holundersalbe schützt (Ölansatz, Blüten mit möglichst wenig Grün)</p>
+            </div>
+        </div>
+        <div class="row row-71">
+            <div class="question">Frage:<br>
+                Zähle drei Pflanzen auf, die einen hohen Gehalt an Saponinen haben.</div>
+            <div class="answer">
+                <p>siehe 3.7, 5.4</p>
+                <p>Antwort:<br>
+                    Seifenkraut<br>
+                    Königskerze<br>
+                    Schlüsselblume (geschützt)<br>
+                    Stiefmütterchen<br>
+                    Efeu (bedingt giftig)</p>
+            </div>
+        </div>
+        <div class="row row-72">
+            <div class="question">Frage:<br>
+                Welche begleitende Therapie würdest du Patienten mit Arthrose empfehlen?</div>
+            <div class="answer">
+                <p>siehe 5.8</p>
+                <p>Antwort:<br>
+                    Ernährungsumstellung (auf basische Kost)<br>
+                    viel Bewegung<br>
+                    viel trinken<br>
+                    Wärmebehandlung<br>
+                    Heublumensäckchen<br>
+                    Blutreinigungskur (Frühjahr + Herbst)<br>
+                    Rheumabad (Rezept siehe 5.8.1.1)</p>
+            </div>
+        </div>
+        <div class="row row-73">
+            <div class="question">Frage:<br>
+                Wie sieht eine erste Hilfe bei Prellungen/ Verstauchungen aus?</div>
+            <div class="answer">
+                <p>siehe 5.11.2</p>
+                <p>Antwort:<br>
+                    Kühlen<br>
+                    Quarkwickel<br>
+                    Erbsensäckchen (Gefrierfach)<br>
+                    große Blätter quetschen u. auflegen<br>
+                    (Ampfer, Beinwell)<br>
+                    Kastanientinktur, Weidenrindentinktur<br>
+                    Johanniskrautöl, Steinklee</p>
+            </div>
+        </div>
+        <div class="row row-74">
+            <div class="question">Frage:<br>
+                Zu welchen Nebenwirkungen können ätherische Ölplfanzen bei Langzeitanwendung führen?</div>
+            <div class="answer">
+                <p>siehe 3.4, 4.2.2</p>
+                <p>Antwort:<br>
+                    Sie wirken giftig auf Leber, Nieren und das zentrale Nervensystem (ZNS)</p>
+                <p>Es kann zu einem Gewöhnungseffekt und allergischen Reaktionen kommen.</p>
+            </div>
+        </div>
+        <div class="row row-75">
+            <div class="question">Frage:<br>
+                Nenne mind. eine Kumarinpflanze.</div>
+            <div class="answer">
+                <p>siehe 3.5</p>
+                <p>Antwort:<br>
+                    Waldmeister<br>
+                    Steinklee<br>
+                    Honigklee<br>
+                    Echtes Labkraut<br>
+                    Rauchgras</p>
+            </div>
+        </div>
+        <div class="row row-76">
+            <div class="question">Frage:<br>
+                Wie wirken Bitterstoffe/ Bitterstoffpflanzen?</div>
+            <div class="answer">
+                <p>siehe 3.3</p>
+                <p>Antwort:<br>
+                    verdauungsfördernd (nach einer Mahlzeit)<br>
+                    appetitanregend (vor einer Mahlzeit)<br>
+                    tonisieren/ stärkend<br>
+                    stoffwechselanregend<br>
+                    gährungs-, blähungs- und fäulniswidrig</p>
+            </div>
+        </div>
+        <div class="row row-77">
+            <div class="question">Frage:<br>
+                Wie würdest du eine Magenschleimhautentzündung behandeln?</div>
+            <div class="answer">
+                <p>siehe 5.2</p>
+                <p>Antwort:<br>
+                    Arzt Diagnose- Dann z.B. mit einer Wechselkur (Teekur):.<br>
+                    <span class="underline">1.Woche</span>- Schleimpflanzen, schützend (Leinsamen, Malve, Hafer)<br>
+                    <span class="underline">2.Woche-</span>
+                    Entzündungshemmende Pflanzen (Kamille, Johanniskraut) 3.<span class="underline">Woche</span>- Gerbstoffpflanzen, stärkend (Odermennig, Salbei Brombeere) 1-3x täglich 1 Tasse Tee</p>
+            </div>
+        </div>
+        <div class="row row-78">
+            <div class="question">Frage:<br>
+                Nenne ein Herzglykoside Pflanze.</div>
+            <div class="answer">
+                <p>siehe 5.6</p>
+                <p>Antwort:<br>
+                    Roter Fingerhut<br>
+                    <span class="underline">Achtung: Verschreibungspflichtig</span></p>
+            </div>
+        </div>
+        <div class="row row-79">
+            <div class="question">Frage:<br>
+                Wie wirken Pflanzen mit ätherischen Ölen?</div>
+            <div class="answer">
+                <p>siehe 3.4, 4.2.2</p>
+                <p>Antwort:<br>
+                    desinfizierend<br>
+                    entzündungshemmend<br>
+                    krampflösend<br>
+                    stärkend (tonisierend) Bakterien- und Viren widrig, Pilz hemmend</p>
+            </div>
+        </div>
+        <div class="row row-80">
+            <div class="question">Frage:<br>
+                Wann sind heiße Wickel und Auflagen kontraindiziert?</div>
+            <div class="answer">Antwort:<br>
+                Bei akuten Entzündungen<br>
+                Bei Fieber</div>
+        </div>
+        <div class="row row-81">
+            <div class="question">Frage:<br>
+                Wie wirken Saponindrogen?</div>
+            <div class="answer">
+                <p>siehe 3.7, 5.4</p>
+                <p>Antwort:<br>
+                    schleimlösend, ausschwemmend,entkrampfend umstimmend (=beruhigend bei Erkältungskrankheiten, nicht reizend) hautreinigend, blutreinigend</p>
+            </div>
+        </div>
+        <div class="row row-82">
+            <div class="question">Frage:<br>
+                Kennst du Pflanzen, die das Immunsystem stärken? Nenne diese.</div>
+            <div class="answer">
+                <p>siehe 3.4, 4.2.2</p>
+                <p>Antwort:<br>
+                    Bitterstoffpflanzen: Löwenzahn Wermut (stärkend/ tonisierend) Frischer Spitzwegerich<br>
+                    Hagebutte (frisch oder mit Honig) Holunderbeerensaft Holunderblütentee</p>
+            </div>
+        </div>
+        <div class="row row-83">
+            <div class="question">Frage:<br>
+                Zähle 5 Gerbstoffpflanzen auf.</div>
+            <div class="answer">
+                <p>siehe 3.1</p>
+                <p>Antwort:<br>
+                    Eiche Salbei Schafgarbe Gundermann Odermennig Frauenmantel, Holunder, Mädesüß Walnuss Preisenbeere, Heidelbeere</p>
+            </div>
+        </div>
+        <div class="row row-84">
+            <div class="question">Frage:<br>
+                Wie werden Bitterstoffe dosiert?</div>
+            <div class="answer">
+                <p>siehe 3.3</p>
+                <p>Antwort:<br>
+                    1/2 TL auf 150 ml oder 1/2-1 TL auf 250 ml Wasser</p>
+                <p>Weniger ist mehr! Nicht süßen!</p>
+                <p>Das hebt die Wirkung auf!</p>
+            </div>
+        </div>
+        <div class="row row-85">
+            <div class="question">Frage:<br>
+                Welche Pflanzen sind bei einer Magenschleimhautentzündung kontraindiziert?</div>
+            <div class="answer">
+                <p>Siehe 5.2</p>
+                <p>Antwort:<br>
+                    Alle Bitterstoffpflanzen</p>
+                <p>Löwenzahn, Schafgarbe, Beifuß Bitterstoffe regen an und wirken reizend</p>
+            </div>
+        </div>
+        <div class="row row-86">
+            <div class="question">Frage:<br>
+                Wie werden frische blutstillende Pflanzen angewendet, wenn du eine blutende Wunde behandeln willst?</div>
+            <div class="answer">
+                <p>Siehe 5.11.5</p>
+                <p>Antwort:<br>
+                    Wegerichblätter (Spitz/ Breitwegerich), Schafgarbeblätter quetschen, wringen oder kauen, damit der Saft austritt, in Mulltuch oder Taschentuch auflegen</p>
+                <p>Tee aus Schafgarbe oder Hirtentäschel abkühlen lassen, Mullauflage machen</p>
+            </div>
+        </div>
+        <div class="row row-87">
+            <div class="question">Frage:<br>
+                Eine Patientin klagt über trockene Augen. Würdest du Augentrost verordnen?</div>
+            <div class="answer">
+                <p>Antwort:<br>
+                    Nein, nicht bei trockenen Augen!</p>
+                <p>Augentrost wirkt austrocknend durch die Gerbstoffe, daher z.B. lieber Leinsamenauflagen machen</p>
+            </div>
+        </div>
+        <div class="row row-88">
+            <div class="question">Frage:<br>
+                Wie wirken Schleimstoffe?</div>
+            <div class="answer">
+                <p>Siehe 3.2</p>
+                <p>Antwort:<br>
+                    schützend, reizmildernd, entzündungs- hemmend, Giftstoffe bindend, abführend</p>
+            </div>
+        </div>
+
+        <div class="row row-90">
+            <div class="question">Frage:<br>
+                Wann sollen Bitterstoffe/ Bitterstofftees
+                <span class="underline">nicht</span>
+                verordnet werden?(Bei welchen Krankheiten?)</div>
+            <div class="answer">
+                <p>siehe 3.3</p>
+                <p>Antwort:<br>
+                    Magenbeschwerden<br>
+                    Bluthochdruck<br>
+                    Sodbrennen<br>
+                    Magen- u. Zwölffingerdarmgeschwüren*<br>
+                    Morbus Crohn<br>
+                    Magenschleimhautentzündung<br>
+                    Schilddrüsenüberfunktion (Überaktivität d. Schilddrüse)</p>
+            </div>
+        </div>
+        <div class="row row-91">
+            <div class="question">Frage:<br>
+                Welcher kühlender Wickel hat sich bei stillenden Müttern bei drohender Brustentzündung bewährt?</div>
+            <div class="answer">
+                <p>siehe 5.10</p>
+                <p>Antwort:<br>
+                    Quarkwickel (siehe 5.10, S. 10)<br>
+                    Honig auftragen<br>
+                    Steinklee/ Weißkohlauflagen<br>
+                    Holundersalbe schützt (Ölansatz, Blüten mit möglichst wenig Grün)</p>
+            </div>
+        </div>
+        <div class="row row-92">
+            <div class="question">Frage:<br>
+                Zähle drei Pflanzen auf, die einen hohen Gehalt an Saponinen haben.</div>
+            <div class="answer">
+                <p>siehe 3.7, 5.4</p>
+                <p>Antwort:<br>
+                    Seifenkraut<br>
+                    Königskerze<br>
+                    Schlüsselblume (geschützt)<br>
+                    Stiefmütterchen<br>
+                    Efeu (bedingt giftig)</p>
+            </div>
+        </div>
+        <div class="row row-93">
+            <div class="question">Frage:<br>
+                Welche begleitende Therapie würdest du Patienten mit Arthrose empfehlen?</div>
+            <div class="answer">
+                <p>siehe 5.8</p>
+                <p>Antwort:<br>
+                    Ernährungsumstellung (auf basische Kost)<br>
+                    viel Bewegung<br>
+                    viel trinken<br>
+                    Wärmebehandlung<br>
+                    Heublumensäckchen<br>
+                    Blutreinigungskur (Frühjahr + Herbst)<br>
+                    Rheumabad (Rezept siehe 5.8.1.1)</p>
+            </div>
+        </div>
+        <div class="row row-94">
+            <div class="question">Frage:<br>
+                Wie sieht eine erste Hilfe bei Prellungen/ Verstauchungen aus?</div>
+            <div class="answer">
+                <p>siehe 5.11.2</p>
+                <p>Antwort:<br>
+                    Kühlen<br>
+                    Quarkwickel<br>
+                    Erbsensäckchen (Gefrierfach)<br>
+                    große Blätter quetschen u. auflegen<br>
+                    (Ampfer, Beinwell)<br>
+                    Kastanientinktur, Weidenrindentinktur<br>
+                    Johanniskrautöl, Steinklee</p>
+            </div>
+        </div>
+        <div class="row row-95">
+            <div class="question">Frage:<br>
+                Zu welchen Nebenwirkungen können ätherische Ölplfanzen bei Langzeitanwendung führen?</div>
+            <div class="answer">
+                <p>siehe 3.4, 4.2.2</p>
+                <p>Antwort:<br>
+                    Sie wirken giftig auf Leber, Nieren und das zentrale Nervensystem (ZNS)</p>
+                <p>Es kann zu einem Gewöhnungseffekt und allergischen Reaktionen kommen.</p>
+            </div>
+        </div>
+        <div class="row row-96">
+            <div class="question">Frage:<br>
+                Nenne mind. eine Kumarinpflanze.</div>
+            <div class="answer">
+                <p>siehe 3.5</p>
+                <p>Antwort:<br>
+                    Waldmeister<br>
+                    Steinklee<br>
+                    Honigklee<br>
+                    Rauchgras</p>
+            </div>
+        </div>
+        <div class="row row-97">
+            <div class="question">Frage:<br>
+                Wie wirken Bitterstoffe/ Bitterstoffpflanzen?</div>
+            <div class="answer">
+                <p>siehe 3.3</p>
+                <p>Antwort:<br>
+                    verdauungsfördernd (nach einer Mahlzeit)<br>
+                    appetitanregend (vor einer Mahlzeit)<br>
+                    tonisieren/ stärkend<br>
+                    stoffwechselanregend<br>
+                    gährungs-, blähungs- und fäulniswidrig</p>
+            </div>
+        </div>
+        <div class="row row-98">
+            <div class="question">Frage:<br>
+                Wie würdest du eine Magenschleimhautentzündung behandeln?</div>
+            <div class="answer">
+                <p>siehe 5.2</p>
+                <p>Antwort:<br>
+                    Arzt Diagnose- Dann z.B. mit einer Wechselkur (Teekur):.<br>
+                    <span class="underline">1.Woche</span>- Schleimpflanzen, schützend (Leinsamen, Malve, Hafer)<br>
+                    <span class="underline">2.Woche-</span>
+                    Entzündungshemmende Pflanzen (Kamille, Johanniskraut) 3.<span class="underline">Woche</span>- Gerbstoffpflanzen, stärkend (Odermennig, Salbei Brombeere) 1-3x täglich 1 Tasse Tee</p>
+            </div>
+        </div>
+        <div class="row row-99">
+            <div class="question">Frage:<br>
+                Nenne ein Herzglykoside Pflanze.</div>
+            <div class="answer">
+                <p>siehe 5.6</p>
+                <p>Antwort:<br>
+                    Roter Fingerhut<br>
+                    <span class="underline">Achtung: Verschreibungspflichtig</span></p>
+            </div>
+        </div>
+        <div class="row row-100">
+            <div class="question">Frage:<br>
+                Wie wirken Pflanzen mit ätherischen Ölen?</div>
+            <div class="answer">
+                <p>siehe 3.4, 4.2.2</p>
+                <p>Antwort:<br>
+                    desinfizierend<br>
+                    entzündungshemmend<br>
+                    krampflösend<br>
+                    stärkend (tonisierend) Bakterien- und Viren widrig, Pilz hemmend</p>
+            </div>
+        </div>
+        <div class="row row-101">
+            <div class="question">Frage:<br>
+                Wann sind heiße Wickel und Auflagen kontraindiziert?</div>
+            <div class="answer">Antwort:<br>
+                Bei akuten Entzündungen<br>
+                Bei Fieber</div>
+        </div>
+        <div class="row row-102">
+            <div class="question">Frage:<br>
+                Wie wirken Saponindrogen?</div>
+            <div class="answer">
+                <p>siehe 3.7, 5.4</p>
+                <p>Antwort:<br>
+                    schleimlösend, ausschwemmend,entkrampfend umstimmend (=beruhigend bei Erkältungskrankheiten, nicht reizend) hautreinigend, blutreinigend</p>
+            </div>
+        </div>
+        <div class="row row-103">
+            <div class="question">Frage:<br>
+                Kennst du Pflanzen, die das Immunsystem stärken? Nenne diese.</div>
+            <div class="answer">
+                <p>siehe 3.4, 4.2.2</p>
+                <p>Antwort:<br>
+                    Bitterstoffpflanzen: Löwenzahn Wermut (stärkend/ tonisierend) Frischer Spitzwegerich<br>
+                    Hagebutte (frisch oder mit Honig) Holunderbeerensaft Holunderblütentee</p>
+            </div>
+        </div>
+        <div class="row row-104">
+            <div class="question">Frage:<br>
+                Zähle 5 Gerbstoffpflanzen auf.</div>
+            <div class="answer">
+                <p>siehe 3.1</p>
+                <p>Antwort:<br>
+                    Eiche Salbei Schafgarbe Gundermann Odermennig Frauenmantel, Holunder, Mädesüß Walnuss Preisenbeere, Heidelbeere</p>
+            </div>
+        </div>
+        <div class="row row-105">
+            <div class="question">Frage:<br>
+                Wie werden Bitterstoffe dosiert?</div>
+            <div class="answer">
+                <p>siehe 3.3</p>
+                <p>Antwort:<br>
+                    1/2 TL auf 150 ml oder 1/2-1 TL auf 250 ml Wasser</p>
+                <p>Weniger ist mehr! Nicht süßen!</p>
+                <p>Das hebt die Wirkung auf!</p>
+            </div>
+        </div>
+        <div class="row row-106">
+            <div class="question">Frage:<br>
+                Welche Pflanzen sind bei einer Magenschleimhautentzündung kontraindiziert?</div>
+            <div class="answer">
+                <p>Siehe 5.2</p>
+                <p>Antwort:<br>
+                    Alle Bitterstoffpflanzen</p>
+                <p>Löwenzahn, Schafgarbe, Beifuß Bitterstoffe regen an und wirken reizend</p>
+            </div>
+        </div>
+        <div class="row row-107">
+            <div class="question">Frage:<br>
+                Wie werden frische blutstillende Pflanzen angewendet, wenn du eine blutende Wunde behandeln willst?</div>
+            <div class="answer">
+                <p>Siehe 5.11.5</p>
+                <p>Antwort:<br>
+                    Wegerichblätter (Spitz/ Breitwegerich), Schafgarbeblätter quetschen, wringen oder kauen, damit der Saft austritt, in Mulltuch oder Taschentuch auflegen</p>
+                <p>Tee aus Schafgarbe oder Hirtentäschel abkühlen lassen, Mullauflage machen</p>
+            </div>
+        </div>
+        <div class="row row-108">
+            <div class="question">Frage:<br>
+                Eine Patientin klagt über trockene Augen. Würdest du Augentrost verordnen?</div>
+            <div class="answer">
+                <p>Antwort:<br>
+                    Nein, nicht bei trockenen Augen!</p>
+                <p>Augentrost wirkt austrocknend durch die Gerbstoffe, daher z.B. lieber Leinsamenauflagen machen</p>
+            </div>
+        </div>
+        <div class="row row-109">
+            <div class="question">Frage:<br>
+                Wie wirken Schleimstoffe?</div>
+            <div class="answer">
+                <p>Siehe 3.2</p>
+                <p>Antwort:<br>
+                    schützend, reizmildernd, entzündungs- hemmend, Giftstoffe bindend, abführend</p>
+            </div>
+        </div>
+        <div class="row row-110">
+            <div class="question">Frage:<br>
+                Welche Nebenwirkungen haben Gerbstoffpflanzen?</div>
+            <div class="answer">
+                <p>siehe 3.1</p>
+                <p>Antwort:<br>
+                    schleimhautreizend, austrocknend</p>
+            </div>
+        </div>
+        <div class="row row-111">
+            <div class="question">Frage:<br>
+                Nenne typische Gichtpflanzen.</div>
+            <div class="answer">
+                <p>siehe 5.8</p>
+                <p>Antwort:<br>
+                    Giersch, Brennnessel, Birke, Goldrute (als Tee- Bestandteil) Alle Nieren durchspülenden Pflanzen (Teekur Frühjahr + Herbst)</p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
